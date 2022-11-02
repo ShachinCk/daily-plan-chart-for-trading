@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily Plan Chart</title>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../css/index.css" />
+  </head>
+  <body>
+    <!-- Version 2.0.0 Code Start -->
+    <div class="menu_overlay"></div>
+    <div class="sidebarMenu">
+      <div style="margin-top: 20px;">
+        <h2>Menu</h2>
+        <div class="qna">
+          <h3 class="question">BTC Trading</h3>
+          <div class="answer">
+            <li><a href="../../../index.html">7 Step plan</a></li>
+            <li><a href="./8-step-plan.html">8 step plan</a></li>
+            <li><a href="./9-step-plan.html">9 step plan</a></li>
+            <li style="background-color: rgb(253, 215, 63);
+            box-shadow: rgb(0 0 0 / 10%) -2px -2px 4px inset,
+              rgb(255 255 255) 2px 2px 4px inset; border-radius: 4px;"><a href="./10-step-plan.html">10 step plan</a></li>
+          </div>
+        </div>
+        <div class="qna">
+          <h3 class="question">ETH Trading</h3>
+          <div class="answer">
+            <li><a href="../eth-trading/7-step-plan.html">7 Step plan</a></li>
+            <li><a href="../eth-trading/8-step-plan.html">8 step plan</a></li>
+            <li><a href="../eth-trading/9-step-plan.html">9 step plan</a></li>
+            <li><a href="../eth-trading/10-step-plan.html">10 step plan</a></li>
+          </div>
+        </div>
+        <div class="qna">
+          <h3 class="question">Genesis Trading</h3>
+          <div class="answer">
+            <li><a href="../genesis-trading/7-step-plan.html">7 Step plan</a></li>
+          </div>
+        </div>
+        <div class="qna">
+          <h3 class="question">Version</h3>
+          <div class="answer">
+            <li style="background-color: rgb(253, 215, 63);
+            box-shadow: rgb(0 0 0 / 10%) -2px -2px 4px inset,
+              rgb(255 255 255) 2px 2px 4px inset; border-radius: 4px;"><a href="../../../index.html">V 2.0.0</a></li>
+            <li><a href="../../version/v1.0.0/index.html">V 1.0.0</a></li>
+          </div>
+        </div>
+        <h4>Developed By Shachin</h5>
+        <div id="social-link">
+          <a target="_blank" href="https://www.facebook.com/shachin.sc/"><img src="../../photos/facebook.png"></a>
+          <a target="_blank" href="https://gitlab.com/Shachin56928"><img src="../../photos/gitlab.png"></a>
+        </div>
+      </div>
+    </div>
+    <div id="menuBtn" class="openMenu">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+
+    <div style="font-family: 'Arial', sans-serif">
+      <h2><u>BTC Trading</u></h2>
+      <h3>10 step plan</h3>
+    </div>
+    <div id="input-field">
+      <div class="inputField">
+        <input id="inputNumber" type="number" placeholder="Enter your amount" />
+        <button id="mybtn" onclick="calculation()">Enter</button>
+      </div>
+    </div>
+    <div style="width: 100%; font-family: 'Arial', sans-serif">
+      <table>
+        <thead>
+          <tr>
+            <th>Period</th>
+            <th>Bet Amount</th>
+            <th>Win Amount</th>
+            <th>Net Profit</th>
+            <th>Total Cost</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1st</td>
+            <td id="b1st">&nbsp</td>
+            <td id="w1st">&nbsp</td>
+            <td id="n1st">&nbsp</td>
+            <td id="c1st">&nbsp</td>
+          </tr>
+          <tr>
+            <td>2nd</td>
+            <td id="b2nd">&nbsp</td>
+            <td id="w2nd">&nbsp</td>
+            <td id="n2nd">&nbsp</td>
+            <td id="c2nd">&nbsp</td>
+          </tr>
+          <tr>
+            <td>3rd</td>
+            <td id="b3rd">&nbsp</td>
+            <td id="w3rd">&nbsp</td>
+            <td id="n3rd">&nbsp</td>
+            <td id="c3rd">&nbsp</td>
+          </tr>
+          <tr>
+            <td>4th</td>
+            <td id="b4th">&nbsp</td>
+            <td id="w4th">&nbsp</td>
+            <td id="n4th">&nbsp</td>
+            <td id="c4th">&nbsp</td>
+          </tr>
+          <tr>
+            <td>5th</td>
+            <td id="b5th">&nbsp</td>
+            <td id="w5th">&nbsp</td>
+            <td id="n5th">&nbsp</td>
+            <td id="c5th">&nbsp</td>
+          </tr>
+          <tr>
+            <td>6th</td>
+            <td id="b6th">&nbsp</td>
+            <td id="w6th">&nbsp</td>
+            <td id="n6th">&nbsp</td>
+            <td id="c6th">&nbsp</td>
+          </tr>
+          <tr>
+            <td>7th</td>
+            <td id="b7th">&nbsp</td>
+            <td id="w7th">&nbsp</td>
+            <td id="n7th">&nbsp</td>
+            <td id="c7th">&nbsp</td>
+          </tr>
+          <tr>
+            <td>8th</td>
+            <td id="b8th">&nbsp</td>
+            <td id="w8th">&nbsp</td>
+            <td id="n8th">&nbsp</td>
+            <td id="c8th">&nbsp</td>
+          </tr>
+          <tr>
+            <td>9th</td>
+            <td id="b9th">&nbsp</td>
+            <td id="w9th">&nbsp</td>
+            <td id="n9th">&nbsp</td>
+            <td id="c9th">&nbsp</td>
+          </tr>
+          <tr>
+            <td>10th</td>
+            <td id="b10th">&nbsp</td>
+            <td id="w10th">&nbsp</td>
+            <td id="n10th">&nbsp</td>
+            <td id="c10th">&nbsp</td>
+          </tr>
+          <tr>
+            <td>Total =</td>
+            <td id="userEnteredNumber">&nbsp;</td>
+            <td colspan="3">Please start the amount from 70 USDT</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="../../js/btc-trading/10-step-plan.js"></script>
+  </body>
+</html>

@@ -1,0 +1,252 @@
+/* Version 2.0.0 css Start */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+li {
+  list-style: none;
+}
+
+/* Harburger Menu Css Start */
+#menuBtn {
+  width: 35px;
+  height: 35px;
+  background-color: rgb(253, 215, 63);
+  box-shadow: rgb(0 0 0 / 10%) -2px -2px 4px inset,
+    rgb(255 255 255) 2px 2px 4px inset;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#menuBtn i {
+  font-size: 20px;
+  margin: 8px;
+}
+
+.sidebarMenu p {
+  color: #009c9c;
+  margin-top: 10%;
+  text-align: center;
+}
+
+.menu_overlay {
+  display: none;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.4);
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.sidebarMenu {
+  position: fixed;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  background: #fff;
+  box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 2;
+  transform: translate(-100%, 0);
+  transition: all 0.3s cubic-bezier(0.29, 0.39, 0.68, 0.53);
+  -webkit-transition: all 0.3s cubic-bezier(0.29, 0.39, 0.68, 0.53);
+}
+.menuOpened .menu_overlay {
+  display: block;
+}
+.menuOpened .sidebarMenu {
+  transform: translate(0, 0);
+  transition: all 0.3s cubic-bezier(0.29, 0.39, 0.68, 0.53);
+  -webkit-transition: all 0.3s cubic-bezier(0.29, 0.39, 0.68, 0.53);
+}
+body.menuOpened {
+  overflow: hidden;
+}
+/* Hamburger Menu Css End */
+/* Menu Css Start */
+.qna {
+  padding: 0.5em 0;
+  border-bottom: 1px solid #ccc;
+}
+.qna:hover,
+.qna.active {
+  background: #83fd9d32;
+}
+.question {
+  color: #333;
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.3s;
+}
+.question:hover {
+  color: #000;
+}
+.qna.active .question {
+  color: rgb(2, 191, 75);
+}
+.qna .question::before {
+  content: ">";
+  display: inline-block;
+  margin-right: 5px;
+  transition: transform 0.3s;
+}
+.qna.active .question::before {
+  transform: rotate(90deg);
+}
+
+.qna .answer {
+  height: 0px;
+  transition: 0.3s linear;
+  overflow: hidden;
+  padding: 0 0.8em;
+}
+
+.qna .answer li {
+  font-size: 13px;
+  padding: 5px 0;
+}
+
+@media (max-width: 700px) {
+  .container {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    box-shadow: none;
+    height: 100vh;
+  }
+  body {
+    place-content: start;
+  }
+}
+/* Menu Css End */
+/* Input Field & Button Css Start */
+#inputNumber {
+  width: 100%;
+  border: 0px;
+  border-radius: 4px;
+  outline: none;
+  font-weight: 500;
+  font-size: 0.75rem;
+  background: rgb(240, 240, 243);
+  box-shadow: rgb(250 251 255) -5px -5px 10px inset,
+    rgb(166 171 189) 5px 5px 10px inset;
+  padding: 0.75rem 1.5625rem 0.75rem 1rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+input[type="number"] {
+  appearance: textfield;
+}
+
+button {
+  background-color: rgb(253, 215, 63);
+  box-shadow: rgb(0 0 0 / 10%) -2px -2px 4px inset,
+    rgb(255 255 255) 2px 2px 4px inset;
+  border-radius: 4px;
+  width: 100%;
+  height: 30px;
+  border: 0px;
+  color: #1f1f1f8b;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+/* Input Field & Button Css Stop */
+/* Table Css Start */
+table {
+  border-spacing: 0px;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 15px;
+  background-color: transparent;
+}
+th {
+  font-weight: bold;
+  border: 1px solid #cccccc;
+  padding: 16px 6px;
+}
+td {
+  border: 1px solid #cccccc;
+  padding: 16px 6px;
+}
+/* Adding Striped Effect for odd rows */
+tr {
+  background-color: transparent;
+}
+tr:nth-of-type(2n + 1) {
+  background-color: #eeeeee;
+}
+tr th {
+  background-color: #dddddd;
+}
+/* Adding Hover Effect for rows */
+tr {
+  -moz-transition: background-color 300ms ease-in-out 0s;
+  -ms-transition: background-color 300ms ease-in-out 0s;
+  -o-transition: background-color 300ms ease-in-out 0s;
+  -webkit-transition: background-color 300ms ease-in-out 0s;
+  transition: background-color 300ms ease-in-out 0s;
+}
+tr:hover {
+  background-color: #fff176;
+}
+/* Removing left and right border of rows for modern UIs */
+tr {
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+}
+th,
+td {
+  border: none;
+}
+
+@media only screen and (max-width: 550px) {
+  body {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  body {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  body {
+    font-size: 8px;
+  }
+}
+/* Table Css Stop */
+
+#social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#social-link a {
+  padding: 5px;
+}
+
+img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid black;
+}

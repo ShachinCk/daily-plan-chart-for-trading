@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily Plan Chart (5 step)</title>
+    <link rel="stylesheet" href="../css/index.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="header">
+        <script defer src="https://www.livecoinwatch.com/static/lcw-widget.js"></script> <div class="livecoinwatch-widget-5" lcw-base="USD" lcw-color-tx="#999999" lcw-marquee-1="coins" lcw-marquee-2="movers" lcw-marquee-items="10" ></div>
+      </div>
+      <div id="content">
+        <div id="input-field">
+            <label>Input your amount:</label>
+            <input id="inputNumber" type="number" min="5" max="15" pattern="[5-15]" />
+            <button id="mybtn" onclick="calculation()">Enter</button> 
+        </div>
+        <div id="table">
+          <table>
+            <tr>
+              <th colspan="5">Your amount: <input disabled id="userEnteredNumber"></th>
+            </tr>
+            <tr>
+              <th>Period</th>
+              <th>Buy Amount</th>
+              <th>Win Amount</th>
+              <th>Net Profit</th>
+            </tr>
+            <tr>
+              <td>1st</td>
+              <td><input disabled id="b1st"></td>
+              <td><input disabled id="w1st"></td>
+              <td><input disabled id="n1st"></td>
+            </tr>
+            <tr>
+              <td>2nd</td>
+              <td><input disabled id="b2nd"></td>
+              <td><input disabled id="w2nd"></td>
+              <td><input disabled id="n2nd"></td>
+            </tr>
+            <tr>
+              <td>3rd</td>
+              <td><input disabled id="b3rd"></td>
+              <td><input disabled id="w3rd"></td>
+              <td><input disabled id="n3rd"></td>
+            </tr>
+            <tr>
+              <td>4th</td>
+              <td><input disabled id="b4th"></td>
+              <td><input disabled id="w4th"></td>
+              <td><input disabled id="n4th"></td>
+            </tr>
+            <tr>
+              <td>5th</td>
+              <td><input disabled id="b5th"></td>
+              <td><input disabled id="w5th"></td>
+              <td><input disabled id="n5th"></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div id="footer">
+        <div>
+          <h4 style="text-align: center;">
+            <a href="../../../../../index.html">Go to version 2</a>
+          </h4>
+          <div class="modalBtn">
+            <button id="myBtn">Jump To</button>
+          </div>
+          <h4>Developed By Shachin</h5>
+            <div id="social-link">
+              <a target="_blank" href="https://www.facebook.com/shachin.sc/"><img src="../photos/facebook.png"></a>
+              <a target="_blank" href="https://gitlab.com/Shachin56928"><img src="../photos/gitlab.png"></a>
+            </div>
+        </div>
+      </div>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close"></span>
+          <div class="pageLink">
+            <a href="../pages/3-step-plan-chart.html">3 step plan</a>
+            <a href="../../index.html">7 step plan</a>
+            <a href="../pages/10-step-plan-chart.html">10 step plan</a>
+            <a href="../pages/7-step-plan-chart=for-eth.html">ETH Trading plan</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/5-step-plan-chart.js"></script>
+  </body>
+</html>
